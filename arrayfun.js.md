@@ -5,7 +5,7 @@
 - initialize this directory as a git project (not tracked in github)
 - Setup a TDD project in the "ArrayFun" :
   - arrayfun.js
-  - spec
+  - spec/
     - array-first-spec.js
     - array-max-spec.js
     - array-min-spec.js
@@ -14,7 +14,7 @@
     - array-uniq-spec.js
     - array-contains-spec.js
     
-- write the first spec
+- write the first spec `array-first-spec.js`
 - then make that entire spec pass by implementing it's corresponding function detailed below
 - then write the next spec
 - and repeat the cycle, committing your project
