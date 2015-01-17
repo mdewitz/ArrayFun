@@ -1,8 +1,23 @@
 # arrayfun.js
 ## part 1
 
-- create a blank js file in your DevLeague directory, named `arrayfun.js`
-- write the following functions
+- create a brand new project directory named "ArrayFun"
+- initialize this directory as a git project (not tracked in github)
+- Setup a TDD project in the "ArrayFun" :
+  - arrayfun.js
+  - spec
+    - array-first-spec.js
+    - array-max-spec.js
+    - array-min-spec.js
+    - array-intersection-spec.js
+    - array-difference-spec.js
+    - array-uniq-spec.js
+    - array-contains-spec.js
+    
+- write the first spec
+- then make that entire spec pass by implementing it's corresponding function detailed below
+- then write the next spec
+- and repeat the cycle, committing your project
 
 ### first(array, [n])
 
