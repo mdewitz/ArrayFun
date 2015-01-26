@@ -25,7 +25,7 @@ describe("arrayfun", function() {
   });
 
   //The first() function must return the first element of the (array)
-  it("first() function must return the first element of the first argument (array)", function(){
+  it("must return the first element of the first argument (array)", function(){
     var array = ['a','b','c'];
     var array1 = arrayfun.first( array, 1 );
     expect( array1 ).toBe( 'a' );

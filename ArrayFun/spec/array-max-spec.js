@@ -21,7 +21,7 @@ describe("arrayfun", function() {
   });
 
   //The max() function must retreive the largest value in the (array)
-  it("max() function must return the largest element/argument of the (array)", function(){
+  it("must return the largest element/argument of the (array)", function(){
     var array = [4, 2, 8, 6];
     var test_array1 = arrayfun.max( array );
     expect( test_array1 ).toBe( 8 );
