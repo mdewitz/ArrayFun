@@ -1,4 +1,4 @@
-module.exports = {
+ module.exports = {
   first : function( array, n ) {
     //var result = null;
     //set default in the beginning
@@ -19,102 +19,66 @@ module.exports = {
     //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min
   },
 
-  intersection : function ( array ) {   
+  intersection : function(array) {   
     var object={};
     var arr=[];
 
-    for(var i = 0; i < arguments.length; i++){    
-      for(var j = 0; j < arguments[i].length; j++) {
+    for(var i=0; i<arguments.length; i++){    
+      for(var j=0; j<arguments[i].length; j++) {
     
-      object[arguments[i][j]]=object[arguments[i][j]];
+      object[arguments[i][j]]=object[arguments[i][j]]||0;
       object[arguments[i][j]]+=1;
-      
-        // if(arguments[i][j]==arguments.length){
-        //   arr.push(arguments[i][j]);
-        // }
-        for(var property in object){
-         if (object[property]===(arguments.length+5));
-        arr.push(Number(property));
-}
-        }
+      }
+    }
+    
+    for(var property in object){
+     if (object[property]==arguments.length)arr.push(Number(property));
+
     }
       return arr;
   },
 
-};
-//     if (array.indexOf(object[arguments[i][j]])===(arguments.length - 1)) {
-    //       arr.push(object[arguments[i][j]]);
-    //     }
-    //   }
-    // }
-   
-
-
-//   difference : function ( array ) {   
-//     var uniq = [];
-//     for (var i = 0; i < array.length; i++){
-//       while (uniq.indexOf(array !== -1)) {
-//         uniq.push(array);
-//       }
-//     }  
-//     return uniq;
-//   },
-// };    
-
- // var objects={};
-//     var arrD=[];
-
-//     for(var k = 0; k < arguments.length; k++){
-//       for(var l=0; l < arguments[k].length; l++) {
-//       objects[arguments[k][l]]=objects[arguments[k][l]]+1;
-//       }
-//     }
-//     
-//     for(var property in objects){
-//         if(objects[property] < 2)
-//           arrD.push(Number(property));
-//     }
-//     return arrD;
-//   },
-
-  // uniq : function (array){
-
-
+  difference : function(n1,n2) {
+    var object={};
+    var arr=[];
     
+    for(var i=0; i<arguments.length; i++){    
+      for(var j=0; j<arguments[i].length; j++) {
 
-// var objects={};
-//     var arrD=[];
+      object[arguments[i][j]]=object[arguments[i][j]]||0;
+      // console.log(object[arguments[i][j]]);
+      object[arguments[i][j]]+=1;
+      }
+    }
+    for(var property in object){
+     if (object[property]===1)arr.push(Number(property));
+    }
+      return arr;
+  }
+};
+  //     object[arguments[i][j]]=object[arguments[i][j]]||0;
+  //     object[arguments[i][j]]+=1;
+  //     }
+  //     for(var property in object){
+  //      if (object[property]===1)arr.push(Number(property));
+  //     }
+  //   }
+  //     return arr;
+  // },
 
-//     for(var k = 0; k < arguments.length; k++){
-//       for(var l=0; l < arguments[k].length; l++) {
-//       objects[arguments[k][l]]=objects[arguments[k][l]]+1;
-//       }
-//     }
-//     
-//     for(var property in objects){
-//         if(objects[property] < 2)
-//           arrD.push(Number(property));
-//     }
-//     return arrD;
-//   },
+    //       if(object.hasOwnProperty(arguments[i][j])){
+  //         continue;
+  //       }
+  //       arr.push(arguments[i][j]);
+  //       (object[arguments[i][j]])=1;
+  //     }
+  //     return arr;
+  //   }
+  // },
+  //http://stackoverflow.com/questions/11246758/how-to-get-unique-values-in-a-array
+  //http://stackoverflow.com/questions/6053108/javascript-4d-arrays/6053332#6053332
 
-//   contains : function (){
-//     var objects={};
-//     var arrD=[];
+//   uniq: function(){
 
-//     for(var k = 0; k < arguments.length; k++){
-//       for(var l=0; l < arguments[k].length; l++) {
-//       objects[arguments[k]].concat.(objects[arguments[k][l]]);
-//         arrD.push(objects[arguments[k][l]]);
-//       }
-//     }
-//   
-// //     for(var property in objects){
-// //         if(objects[property]>0)
-// //           arrD.push(Number(property));
-// //     }
-
-//     return arrD;
-//   },
-// };
-
+//   },
+// }:
