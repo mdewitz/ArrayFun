@@ -54,31 +54,30 @@
      if (object[property]===1)arr.push(Number(property));
     }
       return arr;
-  }
-};
-  //     object[arguments[i][j]]=object[arguments[i][j]]||0;
-  //     object[arguments[i][j]]+=1;
-  //     }
-  //     for(var property in object){
-  //      if (object[property]===1)arr.push(Number(property));
-  //     }
-  //   }
-  //     return arr;
-  // },
+  },
 
-    //       if(object.hasOwnProperty(arguments[i][j])){
-  //         continue;
-  //       }
-  //       arr.push(arguments[i][j]);
-  //       (object[arguments[i][j]])=1;
-  //     }
-  //     return arr;
-  //   }
-  // },
+  uniq : function () {
+    return this.reduce(function(accum, current) {
+        if (accum.indexOf(current) < 0) {
+            accum.push(current);
+        }
+        return accum;
+    }, []);
+}  
+
+
+//   var arr = [];
+//     for(var i = 0; i < this.length; i++) {
+//       for(var j = 0; j < arr.length; j++) {
+//         if(this[i] !=arr[j]) {
+//           arr.push(this[i]);
+//         }
+//       }
+//     }
+//     return arr; 
+//   },
+};
+
+
   //http://stackoverflow.com/questions/11246758/how-to-get-unique-values-in-a-array
   //http://stackoverflow.com/questions/6053108/javascript-4d-arrays/6053332#6053332
-
-//   uniq: function(){
-
-//   },
-// }:
