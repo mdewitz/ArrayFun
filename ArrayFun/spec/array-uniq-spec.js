@@ -26,6 +26,6 @@ describe("arrayfun", function() {
   it("uniq() function must return the dublicate free elements of the (array)", function(){
     var test = [1, 2, 1, 3, 1];
     var test_array1 = arrayfun.uniq( test );
-    expect( test_array1 ).toBe( [1, 2, 3] );
+    expect( test_array1 ).toEqual([1, 2, 3]);
   });
 });

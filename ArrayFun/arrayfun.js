@@ -56,28 +56,15 @@
       return arr;
   },
 
-  uniq : function () {
-    return this.reduce(function(accum, current) {
-        if (accum.indexOf(current) < 0) {
-            accum.push(current);
-        }
-        return accum;
-    }, []);
-}  
-
-
-//   var arr = [];
-//     for(var i = 0; i < this.length; i++) {
-//       for(var j = 0; j < arr.length; j++) {
-//         if(this[i] !=arr[j]) {
-//           arr.push(this[i]);
-//         }
-//       }
-//     }
-//     return arr; 
-//   },
+  uniq : function (array) {
+    var arr = [];
+    for(var i = 0; i < arguments[0].length; i++) {
+      if(arr.indexOf(arguments[0][i])===-1) {
+        arr.push(arguments[0][i]);
+      }
+    } 
+    return arr; 
+  },
+  // Source: http://stackoverflow.com/questions/1988349/array-push-if-does-not-exist
 };
 
-
-  //http://stackoverflow.com/questions/11246758/how-to-get-unique-values-in-a-array
-  //http://stackoverflow.com/questions/6053108/javascript-4d-arrays/6053332#6053332
