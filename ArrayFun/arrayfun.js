@@ -66,5 +66,22 @@
     return arr; 
   },
   // Source: http://stackoverflow.com/questions/1988349/array-push-if-does-not-exist
+  
+  contains : function (array, n) {
+    for(var i = 0; i < array.length; i++) {
+      // console.log(array.length);
+      if(array[i] === n) {
+        return true;
+      }else {
+        return false;
+      }
+    } 
+  },
 };
 
+// for(var i = 0; i < array.length; i++) {
+//       // console.log(array.length);
+//       if(array.indexOf(n) > -1) {
+//         return true;
+//       }else {
+//         return false;
